@@ -17873,8 +17873,10 @@ flex-direction:row;
   background-color: var(--bs-primary); /* Mercury Blue */
   color: var(--bs-light); /* White Text */
   padding: 20px;
+  text-align: center;
   /* border-radius: 8px; */
 }
+
 
 /* Secondary Theme */
 #milele-theme2 {
@@ -17883,6 +17885,7 @@ flex-direction:row;
   background-color: var(--bs-dark); /* Dark Theme */
   color: var(--bs-light); /* White Text */
   padding: 20px;
+  text-align: center;
   /* border-radius: 8px; */
 }
 
@@ -17893,6 +17896,7 @@ flex-direction:row;
   background-color: var(--bs-gray); /* Neutral Gray */
   color: var(--bs-light);
   padding: 20px;
+  text-align: center;
   /* border-radius: 8px; */
 }
 
