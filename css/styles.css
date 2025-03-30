@@ -18271,9 +18271,9 @@ a.goto-links:hover .html-links, a.goto-links:active .html-links {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
-  .banner-text{
-    font-size: 1.5rem; 
-  }
+  /* .banner-text{
+    font-size: 1rem; 
+  } */
 
 }
 
@@ -18290,12 +18290,18 @@ a.goto-links:hover .html-links, a.goto-links:active .html-links {
     padding: 6px 12px;
     font-size: 0.8rem;
   }
-  .banner-text{
-    font-size: 0.8rem; 
+  /* .banner-text{
+    font-size: 0.6rem; 
     line-height:1;
-  }
+  } */
 }
-
+@media (max-width: 450px) {
+/*  
+  .banner-text{
+    font-size: 0.4rem; 
+    line-height:1;
+  } */
+}
 
 
 .banner-container{
@@ -18312,16 +18318,16 @@ a.goto-links:hover .html-links, a.goto-links:active .html-links {
   object-fit: cover;
 }
 
-.banner-text{
-  font-size: 3rem; 
+.banner-text {
   font-weight: bold;
-  position:absolute;
-  top:50%;
-  align-items: center;
-  justify-content: center;
-  transform:translateY(-50%);
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  transform: translate(-50%);
   text-align: center;
-  color:white;
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem); /* Adjusted min to 1rem for smaller screens */
+  line-height: 1.2;
 }
 
 /* General Section Styling */
@@ -18745,11 +18751,15 @@ header {
 }
 
 /* Name Styling */
-.name h1 {
+.name a{
+  text-decoration: none;
+}
+.name  h1 {
   margin: 0; /* Removes default margin */
   font-size: 1.5rem; /* Default size, adjust as needed */
   color: var(--bs-primary); /* Matches your brand blue */
   white-space: nowrap; /* Prevents text wrapping */
+  
 }
 
 /* Responsive Adjustments */
@@ -18787,8 +18797,17 @@ header {
 }
 @media screen and (max-width:1200px){
   .navmenu {
-    margin-right: 0; 
+    margin-right: -10px; 
+
   }
+ 
+}
+@media screen and (min-width:1200px){
+  .navmenu {
+    margin-right: 8rem; 
+
+  }
+ 
 }
 
 
@@ -19508,7 +19527,7 @@ h1 {
 }
 @media screen and (max-width:400px){
   .footer .links a {
-    flex-wrap: nowrap;
+    flex-wrap:nowrap;
     gap:4;
   }
 }
@@ -19619,8 +19638,90 @@ h1 {
 }
 
 
+ /*--------------------------------------------------------------
+# Page under construction stlyes
+--------------------------------------------------------------*/
+/* Page Under Construction */
+.under-construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bs-light); /* #ffffff */
+  padding: 2rem;
+  text-align: center;
+}
 
+.under-construction-content {
+  background-color: var(--bs-light); /* #ffffff */
+  border: 2px solid var(--bs-primary); /* #185893 */
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
+.under-construction h2 {
+  font-size: 2.5rem;
+  color: var(--bs-primary); /* #185893 */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.under-construction p {
+  font-size: 1.2rem;
+  color: var(--bs-dark); /* #212529 */
+  margin-bottom: 2rem;
+}
+
+.construction-icon {
+  font-size: 3rem;
+  color: var(--bs-primary); /* #185893 */
+  animation: spin 3s infinite linear;
+}
+
+/* Spin Animation for Icon */
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .under-construction-content {
+      padding: 2rem 1.5rem;
+  }
+
+  .under-construction h2 {
+      font-size: 2rem;
+  }
+
+  .under-construction p {
+      font-size: 1rem;
+  }
+
+  .construction-icon {
+      font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .under-construction-content {
+      padding: 1.5rem 1rem;
+  }
+
+  .under-construction h2 {
+      font-size: 1.8rem;
+  }
+
+  .under-construction p {
+      font-size: 0.9rem;
+  }
+}
 
 
 
