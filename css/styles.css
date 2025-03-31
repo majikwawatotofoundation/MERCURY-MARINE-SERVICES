@@ -19207,17 +19207,12 @@ h1 {
       align-items: center;
       justify-content: center;
       display: flex;
+      border-color: none;
     
     }
 
     .get-quote-btn {
-      /* background-color: var(--bs-primary); */
-      /* color: var(--bs-light);
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 5px; */
+   
       background-color: var(--bs-primary);
       color: var(--bs-light);
       border-radius: 30px;
@@ -19231,6 +19226,7 @@ h1 {
       animation: beat 1.5s infinite; /* Pulse effect */
       transition: background-color 0.3s;
       position: relative;
+      border-color: none;
     }
 
     .get-quote-btn:hover {
