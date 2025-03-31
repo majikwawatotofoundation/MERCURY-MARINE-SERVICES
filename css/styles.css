@@ -517,6 +517,11 @@ progress {
 .list-inline {
   padding-left: 0;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.list-inline li {
+ gap:2;
 }
 
 .list-inline-item {
@@ -7575,6 +7580,12 @@ textarea.form-control-lg {
 .my-auto {
   margin-top: auto !important;
   margin-bottom: auto !important;
+
+}
+.my-auto h5, .my-auto .text-muted{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mt-0 {
@@ -10847,6 +10858,15 @@ header.masthead:before {
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
 }
+
+.showcase{
+  text-align: center;
+}
+.gap-2{
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
@@ -10856,6 +10876,7 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
+
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -17874,6 +17895,9 @@ flex-direction:row;
   color: var(--bs-light); /* White Text */
   padding: 20px;
   text-align: center;
+  height:auto;
+  align-items: center;
+  justify-content: center;
   /* border-radius: 8px; */
 }
 
@@ -17886,6 +17910,9 @@ flex-direction:row;
   color: var(--bs-light); /* White Text */
   padding: 20px;
   text-align: center;
+  height:auto;
+  align-items: center;
+  justify-content: center;
   /* border-radius: 8px; */
 }
 
@@ -17897,6 +17924,9 @@ flex-direction:row;
   color: var(--bs-light);
   padding: 20px;
   text-align: center;
+  height:auto;
+  align-items: center;
+  justify-content: center;
   /* border-radius: 8px; */
 }
 
@@ -17969,6 +17999,7 @@ a.donate-link:hover .donate {
   justify-content: flex-end; /* Ensure content aligns to the bottom */
   height: 100%; /* Make it take the full height of its container */
   padding: 2rem; /* Add padding around the content */
+  text-align: center;
 }
 .html-links{
   background-color: #fdcf35;
@@ -19137,6 +19168,11 @@ h1 {
       height: 100%;
       object-fit: cover; /* Ensures images fill the slide */
     }
+    @media screen and (max-width:991px){
+      .swiper .swiper-button-next,.swiper .swiper-button-prev{
+        display:none;
+      }
+    }
 
     /* Static Text and Button */
     .hero-content {
@@ -19148,6 +19184,7 @@ h1 {
       max-width: 500px;
       color: var(--bs-light);
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* For readability on images */
+      text-align: center;
     }
 
     .hero-content h1 {
@@ -19167,17 +19204,26 @@ h1 {
     .get-quote-container {
       display: inline-block; /* Sits with the text */
       position: relative;
+      align-items: center;
+      justify-content: center;
+      display: flex;
     
     }
 
     .get-quote-btn {
-      background-color: var(--bs-primary);
-      color: var(--bs-light);
+      /* background-color: var(--bs-primary); */
+      /* color: var(--bs-light);
       border: none;
       padding: 10px 20px;
       font-size: 1rem;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 5px; */
+      background-color: var(--bs-primary);
+      color: var(--bs-light);
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -19390,9 +19436,16 @@ h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
+    padding: 2rem; /* Add padding around the content */
   }
   
   .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    
+  }
+  .about-section li {
     font-size: 1.2rem;
     margin-bottom: 40px;
     color: #555;
@@ -19506,6 +19559,9 @@ h1 {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  display:flex;
 }
 
 .footer h3 {
@@ -19514,6 +19570,9 @@ h1 {
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
+}
+.footer h3{
+  text-align: center;
 }
 
 .footer p {
@@ -19529,6 +19588,7 @@ h1 {
   .footer .links a {
     flex-wrap:nowrap;
     gap:4;
+    text-align: center;
   }
 }
 

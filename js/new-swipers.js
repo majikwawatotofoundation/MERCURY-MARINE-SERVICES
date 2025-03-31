@@ -15,4 +15,5 @@ const swiper = new Swiper(".mySwiper", {
     },
     speed: 1000, // 1-second transition for slow effect
     loop: true,
+    allowTouchMove: true, // Enables touch swipe navigation
 });
