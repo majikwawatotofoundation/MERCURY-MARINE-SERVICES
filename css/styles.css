@@ -19576,29 +19576,45 @@ h1 {
   min-width: 250px;
   padding: 15px;
 }
+.footer-col a {
+  text-decoration: none;
+}
 
 /* Left Column */
 .footer-col-left {
   text-align: left;
+ 
 }
-
+ @media screen and (min-width:992px){
 .logo-name-wrapper {
   display: flex;
   align-items: center;
+  justify-content:left;
   margin-bottom: 10px;
+  flex-direction: row;
 }
+ }
+
 
 .footer-logo {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 50px;
+  max-height: 50px;
   margin-right: 10px;
+  justify-content: center;
+  
 }
+
 
 .company-name {
   margin: 0;
   color: var(--bs-light);
   font-size: 1.2rem;
 }
+/* .footer-logo, .company-name{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 .footer-slogan {
   color: var(--bs-light);
@@ -19739,7 +19755,7 @@ h1 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .footer-col {
     flex: 100%;
     text-align: center;
@@ -19999,14 +20015,14 @@ h1 {
 }
 
 /* Spin Animation for Icon */
-@keyframes spin {
+/* @keyframes spin {
   0% {
       transform: rotate(0deg);
   }
   100% {
       transform: rotate(360deg);
   }
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
