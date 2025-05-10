@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
     function lazyLoadImages() {
-        const images = document.querySelectorAll('.slow-load'); // Target images in carousel
+        const images = document.querySelectorAll('.slow-load'); 
     
         const observer = new IntersectionObserver((entries, observer) => {
             for (let i = 0; i < entries.length; i++) {
