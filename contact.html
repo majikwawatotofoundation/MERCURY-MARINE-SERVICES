@@ -40,6 +40,9 @@
 
         <link href="css/styles.css" rel="stylesheet">
 
+         <!--RECAPTCHA-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   </head>
 
     <body class="contact-page">
@@ -116,6 +119,8 @@
                                 <textarea id="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
                                 <div class="invalid-feedback">Please enter your message.</div>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6Lc6y4ErAAAAAGiCV4TVSUajmHmoUDZ9mDltvOf4"></div>
+
                             <button type="submit" class="btn ">Request Quote</button>
                         </form>
                     </div>
@@ -130,8 +135,8 @@
                         
                     
                         <p><strong>Email Us:</strong></p>
-                        <a href="mailto:info@mercurymarineservices.com">info@mercurymarineservices.com</a> <br>
-                        <a href="mailto:ops.mercurymarine@hotmail.com">ops.mercurymarine@hotmail.com</a>
+                        <a id="zoho-email" href="#" target="_blank"></a> <br>
+                        <a id="gmail-email" href="#" target="_blank"></a>
                     </div>
                     
                     <!-- Google Map -->
@@ -149,7 +154,10 @@
 
 
     
-       
+          <!-- Partners Section -->
+              <section class="showcase mb-1" id="mercury-patners">
+                <!-- Populated dynamically by partners.js -->
+              </section>
               
         
             <footer class="global-footer">
@@ -212,8 +220,8 @@
                   <div class="footer-col footer-col-right">
                     <div class="contact-info">
                       <p><i class="bi bi-geo-alt"></i> <a href="contact.html" >Mombasa, Kenya</a></p>
-                      <p><i class="bi bi-envelope"></i> <a href="mailto:info@mercurymarineservices" target="_blank">info@mercurymarineservices</a></p>
-                      <p><i class="bi bi-envelope"></i> <a href="mailto:ops.mercurymarine@hotmail.com" target="_blank">ops.mercurymarine@hotmail.com</a></p>
+                      <p><i class="bi bi-envelope"></i> <a id="zoho-email" href="#" target="_blank"></a></p>
+                      <p><i class="bi bi-envelope"></i> <a id="gmail-email" href="#" target="_blank"></a></p>
                       <p><i class="bi bi-telephone"></i> <a href="tel:+254720542362" >+254 (0) 720 542 362</a></p>
                       <p><i class="bi bi-telephone"></i> <a href="tel:+254105281307" >+254 (0) 105 281 307</a></p>
                       <p><i class="bi bi-telephone"></i> <a href="tel:+254737068502" >+254 (0) 737 068 502</a></p>
@@ -234,7 +242,7 @@
 
         
 
-      
+         <script src="js/patners.js"></script>
         <script src="js/newnav.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

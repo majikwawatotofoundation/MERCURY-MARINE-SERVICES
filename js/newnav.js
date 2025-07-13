@@ -13,6 +13,74 @@
   // window.addEventListener('load', toggleScrolled);
 
 
+      //HIDING
+
+        const ZohoemailLink = "info" + "@mercurymarineservices.com";
+        const GmailemailLink = "ops.mercurymarine" + "@hotmail.com";
+    document.getElementById("zoho-email").href = "mailto:" + ZohoemailLink;
+    document.getElementById("zoho-email").innerText = ZohoemailLink;
+
+    document.getElementById("gmail-email").href = "mailto:" + GmailemailLink;
+    document.getElementById("gmail-email").innerText = GmailemailLink;
+
+    //PATNERS swiper
+    const patners = document.getElementById("mercury-patners");
+    patners.innerHTML = `<div class="container">
+    <h2 class="text-center text-primary mb-4">Our Trusted Partners & Affiliations</h2>
+    <p class="text-center text-muted mb-4">
+      Mercury Marine Services collaborates with key maritime authorities and professional bodies to maintain operational excellence and regulatory compliance.
+    </p>
+    
+    <div class="swiper patnersSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <figure class="text-center">
+            <img class="img-fluid lazyload " src="assets/patners/kpa-logo-mercury-marine-services.png" alt="Kenya Ports Authority Logo">
+            <figcaption class="mt-2 small text-muted">Kenya Ports Authority</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="text-center">
+            <img class="img-fluid lazyload " src="assets/patners/kma-logo-mercury-marine-services.png" alt="Kenya Maritime Authority Logo">
+            <figcaption class="mt-2 small text-muted">Kenya Maritime Authority</figcaption>
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure class="text-center">
+            <img class="img-fluid lazyload " src="assets/patners/imgs-logo-mercury-marine-services.png" alt="Institute of Marine Surveying Logo">
+            <figcaption class="mt-2 small text-muted">Institute of Marine Surveying</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="swiper-pagination mt-3"></div>
+    </div>
+  </div>`;
+
+    var swiper = new Swiper("patnersSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+
+
 /**
    * Mobile nav toggle
    */
