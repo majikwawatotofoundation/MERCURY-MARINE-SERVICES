@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Inject HTML
       patnersSection.innerHTML = `
         <div class="container showcase-text lead my-auto">
-          <h2 class="text-center  mb-4">Our Trusted Partners & Affiliations</h2>
+          <h2 class="text-center  mb-4">Organizations We Work With</h2>
           <p class="text-center">
-            Mercury Marine Services collaborates with key maritime authorities and professional bodies to maintain operational excellence and regulatory compliance.
+           From port authorities to industry clients, our partnerships reflect the trusted relationships we've built across the maritime ecosystem.
           </p>
           <div class="swiper patnersSwiper">
             <div class="swiper-wrapper">${slides}</div>
