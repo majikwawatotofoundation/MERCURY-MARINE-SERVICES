@@ -20061,87 +20061,85 @@ h1 {
 #Patners swiper
 --------------------------------------------------------------*/
 /* Partners Swiper */
+#mercury-patners .showcase-text {
+  padding: 1rem 0;
+}
+#mercury-patners .showcase-img {
+  min-height: auto;
+}
+#mercury-patners .showcase-img img {
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
 #mercury-patners .container {
-  padding: 40px 0;
+  padding: 20px 0;
 }
-
 #mercury-patners h2 {
-  font-family: var(--heading-font), sans-serif; /* Montserrat */
-  color: var(--heading-color); /* #222222 */
-  font-size: 2rem;
+  font-family: var(--heading-font), sans-serif;
+  color: var(--heading-color);
+ 
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
-
 #mercury-patners p {
   font-family: var(--default-font), sans-serif;
-  color: var(--paragraph-color); /* Assuming #666 or text-muted */
-  font-size: 1rem;
+  color: var(--paragraph-color);
+ 
   max-width: 600px;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
 }
-
 .patnersSwiper {
-  padding-bottom: 40px; /* Space for pagination */
+  padding-bottom: 30px;
+  height: 200px;
 }
-
 .patnersSwiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Allow flexible height */
+  height: 200px;
 }
-
 .patnersSwiper .swiper-slide figure {
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
-
 .patnersSwiper .swiper-slide img {
-  max-height: 100px; /* Constrain image size */
-  max-width: 100%; /* Responsive */
-  object-fit: contain; /* Preserve aspect ratio */
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
-
 .patnersSwiper .swiper-slide img:hover {
-  transform: scale(1.1); /* Subtle hover effect */
+  transform: scale(1.1);
 }
-
 .patnersSwiper .swiper-slide figcaption {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 0.875rem;
-  color: var(--paragraph-color); /* text-muted */
+  color: var(--paragraph-color);
 }
-
 .patnersSwiper .swiper-pagination {
   position: relative;
-  margin-top: 20px;
+  margin-top: 15px;
 }
-
 .patnersSwiper .swiper-pagination-bullet {
-  background-color: var(--accent-color); /* #106eea */
+  background-color: var(--accent-color);
   opacity: 0.5;
 }
-
 .patnersSwiper .swiper-pagination-bullet-active {
   opacity: 1;
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  #mercury-patners h2 {
-    font-size: 1.5rem;
-  }
-  #mercury-patners p {
-    font-size: 0.9rem;
-  }
+ 
   .patnersSwiper .swiper-slide img {
     max-height: 80px;
   }
   .patnersSwiper .swiper-slide figcaption {
     font-size: 0.75rem;
+  }
+  #mercury-patners .showcase-text {
+    padding: 0.5rem 0;
   }
 }
 
